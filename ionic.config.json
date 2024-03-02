@@ -1,0 +1,7 @@
+{
+  "name": "TecHub",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
