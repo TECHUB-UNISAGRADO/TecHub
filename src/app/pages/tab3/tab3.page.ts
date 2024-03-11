@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class Tab3Page {
 
-  public titulo: string = 'Tab 3';
+  public titulo: string = 'SOBRE OS DEVS';
 
   constructor() { }
 
