@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular'; 
 
 @Component({
   selector: 'app-tab1',
@@ -9,6 +10,10 @@ export class Tab1Page {
 
   public titulo: string = "CURSOS DE TECNOLOGIA";
 
-  constructor() { }
+  constructor(private navCtrl: NavController) {}
+  
+  redirectCC() {
+    this.navCtrl.navigateForward('/ciencia-computacao');
+  }
 
 }

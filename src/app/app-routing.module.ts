@@ -9,6 +9,10 @@ const routes: Routes = [
   {
     path: 'splash',
     loadChildren: () => import('./pages/splash/splash.module').then(m => m.SplashPageModule)
+  },
+  {
+    path: 'ciencia-computacao',
+    loadChildren: () => import('./pages/ciencia-computacao/ciencia-computacao.module').then( m => m.CienciaComputacaoPageModule)
   }
 ];
 @NgModule({

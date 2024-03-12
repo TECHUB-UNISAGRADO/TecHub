@@ -1,0 +1,15 @@
+.btn-red-home{
+    color: white;
+    width: 300px;
+}
+
+ion-button{
+    --background: red !important;
+}
+
+.align-center-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+ }
