@@ -16,4 +16,8 @@ export class Tab1Page {
     this.navCtrl.navigateForward('/ciencia-computacao');
   }
 
+  redirectJD() {
+    this.navCtrl.navigateForward('/jogos-digitais');
+  }
+
 }

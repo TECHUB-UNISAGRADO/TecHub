@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./ciencia-computacao.page.scss'],
 })
 export class CienciaComputacaoPage implements OnInit {
+  public titulo: string = "Ciência da Computação";
 
   constructor() { }
 

@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CienciaComputacaoPageRoutingModule } from './ciencia-computacao-routing.module';
+import { JogosDigitaisPageRoutingModule } from './jogos-digitais-routing.module';
 
-import { CienciaComputacaoPage } from './ciencia-computacao.page';
+import { JogosDigitaisPage } from './jogos-digitais.page';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    CienciaComputacaoPageRoutingModule,
+    JogosDigitaisPageRoutingModule,
     SharedModule
   ],
-  declarations: [CienciaComputacaoPage]
+  declarations: [JogosDigitaisPage]
 })
-export class CienciaComputacaoPageModule {}
+export class JogosDigitaisPageModule {}

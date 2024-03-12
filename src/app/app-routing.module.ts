@@ -13,6 +13,10 @@ const routes: Routes = [
   {
     path: 'ciencia-computacao',
     loadChildren: () => import('./pages/ciencia-computacao/ciencia-computacao.module').then( m => m.CienciaComputacaoPageModule)
+  },
+  {
+    path: 'jogos-digitais',
+    loadChildren: () => import('./pages/jogos-digitais/jogos-digitais.module').then( m => m.JogosDigitaisPageModule)
   }
 ];
 @NgModule({
