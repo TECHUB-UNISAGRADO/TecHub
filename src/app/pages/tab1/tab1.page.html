@@ -1,10 +1,30 @@
 <app-header [titulo]="titulo"></app-header>
 
 <ion-content [fullscreen]="true" color="dark">
-    <div class="align-center-buttons">
-        <ion-button class="btn-red-home" expand="block" (click)="redirectCC()">Ciência da Computação</ion-button>
-        <br>
-        <ion-button class="btn-red-home" expand="block" (click)="redirectJD()">Jogos Digitais</ion-button>
+    
+    <div class="cards-home">
+        <ion-button class="btn-card" button="true" (click)="redirectCC()">
+            <ion-card class="card-media-home">
+                <div class="img-container">
+                    <img class="card-img" alt="Silhouette of mountains" src="../../../assets/imgs/image-CC.png" />
+                </div>
+                <ion-card-header class="header-card">
+                    Ciência da Computação
+                </ion-card-header>
+            </ion-card>
+        </ion-button>
     </div>
 
+    <div class="cards-home">
+        <ion-button class="btn-card" button="true" (click)="redirectJD()">
+            <ion-card class="card-media-home">
+                <div class="img-container">
+                    <img alt="Silhouette of mountains" src="../../../assets/imgs/image-JD.png" />
+                </div>
+                <ion-card-header class="header-card">
+                    Jogos Digitais
+                </ion-card-header>
+            </ion-card>
+        </ion-button>
+    </div>
 </ion-content>

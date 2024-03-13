@@ -1,16 +1,18 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular'; 
 
 @Component({
   selector: 'app-ciencia-computacao',
   templateUrl: './ciencia-computacao.page.html',
   styleUrls: ['./ciencia-computacao.page.scss'],
 })
-export class CienciaComputacaoPage implements OnInit {
+export class CienciaComputacaoPage{
   public titulo: string = "Ciência da Computação";
 
-  constructor() { }
+  constructor(private navCtrl: NavController) { }
 
-  ngOnInit() {
+  returnHome(){
+    this.navCtrl.pop();
   }
 
 }

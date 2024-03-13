@@ -1,15 +1,53 @@
+ion-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .btn-red-home{
     color: white;
     width: 300px;
 }
 
-ion-button{
-    --background: red !important;
-}
-
-.align-center-buttons {
+.buttons-home{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
- }
+}
+
+ion-button{
+    --background: transparent !important;
+    --box-shadow: 0 !important;
+}
+
+.cards-home{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-media-home{
+    width: 100%;
+    height: 200px;
+    --background: linear-gradient(to bottom, #500a0a, #8b0303) !important;
+}
+
+.btn-card{
+    --background: transparent !important;
+    width: 90%;
+}
+
+.img-container{
+    width: 170px;
+}
+
+.card-img{
+    width: 100%;  
+}
+
+.header-card{
+    color: white;
+    font-size: medium;
+}
+
