@@ -8,7 +8,7 @@ import { NavController } from '@ionic/angular';
 })
 export class Tab1Page {
 
-  public titulo: string = "CURSOS DE TECNOLOGIA";
+  public titulo: string = "CURSOS";
 
   constructor(private navCtrl: NavController) {}
   
