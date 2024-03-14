@@ -12,8 +12,4 @@ export class CienciaComputacaoPage{
 
   constructor(private navCtrl: NavController) { }
 
-  returnHome(){
-    this.navCtrl.pop();
-  }
-
 }
