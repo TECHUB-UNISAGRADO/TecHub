@@ -7,6 +7,7 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./ciencia-computacao.page.scss'],
 })
 export class CienciaComputacaoPage{
+  public voltar: boolean = true;
   public titulo: string = "Ciência da Computação";
 
   constructor(private navCtrl: NavController) { }

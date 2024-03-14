@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular'; 
 
 @Component({
   selector: 'app-jogos-digitais',
@@ -7,14 +6,11 @@ import { NavController } from '@ionic/angular';
   styleUrls: ['./jogos-digitais.page.scss'],
 })
 export class JogosDigitaisPage implements OnInit {
+  public voltar: boolean = true;
   public titulo: string = "Jogos Digitais";
-
-  constructor(private navCtrl: NavController) { }
+  
+  constructor() { }
 
   ngOnInit() {
-  }
-
-  returnHome(){
-    this.navCtrl.pop();
   }
 }

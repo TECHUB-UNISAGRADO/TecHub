@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class HeaderComponent {
 
+  @Input() public voltar: boolean = false;
   @Input() public titulo!: string;
 
   constructor() { }

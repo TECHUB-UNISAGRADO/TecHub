@@ -1,11 +1,4 @@
-<ion-header>
-  <ion-toolbar>
-    <app-header [titulo]="titulo"></app-header>
-    <ion-buttons slot="start" class="btn-back">
-      <ion-button (click)="returnHome()"><ion-icon name="arrow-back-outline"></ion-icon></ion-button>
-    </ion-buttons>
-  </ion-toolbar>
-</ion-header>
+<app-header [voltar]="voltar" [titulo]="titulo"></app-header>
 
 <ion-content [fullscreen]="true" color="dark">
 
