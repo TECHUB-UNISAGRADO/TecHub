@@ -1,7 +1,29 @@
-.btn-back{
-    --background: red !important;
+.contents-CC{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
 }
+
 
 ion-buttons{
     --background: transparent !important;
 }
+
+.card-90{
+    width: 80%;
+    --background: linear-gradient(to bottom, #500a0a, #8b0303) !important;
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 6px 8px rgb(0, 0, 0) !important; /* Sombra */
+}
+
+.title-card{
+    text-align: center;
+    color: white;
+}
+
+.txt-justify{
+    text-align: justify;
+    color: white;
+}
+
+
