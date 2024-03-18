@@ -1,35 +1,35 @@
-.contents-CC{
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+.content-section {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
 
-    .card-90{
-        width: 80%;
-        --background: linear-gradient(to bottom, #500a0a, #8b0303) !important;
-        border-radius: 10px; /* Cantos arredondados */
-        box-shadow: 0 6px 8px rgb(0, 0, 0) !important; /* Sombra */
-    
-        .title-card{
-            text-align: center;
-            color: white;
-        }
-    
-        .txt-justify{
-            text-align: justify;
-            color: white;
-        }
+  ion-card {
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: 0 6px 8px rgb(0, 0, 0);
+    color: #fff;
+
+    ion-card-title {
+      text-align: center;
+      margin-top: 10px;
     }
+
+    ion-card-content {
+      text-align: justify;
+
+      p {
+        margin: 10px 0px 0px 0px;
+        tab-size: 8;
+
+        // fiz isso com o span pois, dependendo do tamanho da tela, o espaço da tabulação (&nbsp;) ficava diferente em cada parágrafo
+        span {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+
+  a {
+    color: #fff;
+  }
 }
-
-
-ion-buttons{
-    --background: transparent !important;
-}
-
-
-
-
-
-
-
-
