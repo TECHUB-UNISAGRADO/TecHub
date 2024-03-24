@@ -10,7 +10,7 @@ import { Platform } from '@ionic/angular';
 export class AppComponent {
 
   constructor(private router: Router, private platform: Platform) {
-//    this.exibirSplashScreen();
+    this.exibirSplashScreen();
   }
 
   exibirSplashScreen(): void {
