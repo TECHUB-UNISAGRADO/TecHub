@@ -17,6 +17,6 @@ export class SplashPage implements OnInit {
   private fecharSplashScreen(): void {
     setTimeout(() => {
       this.navCtrl.navigateRoot('', { replaceUrl: true });
-    }, 2500);
+    }, 1750);
   }
 }
