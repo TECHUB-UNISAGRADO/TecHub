@@ -17,7 +17,12 @@ const routes: Routes = [
   {
     path: 'jogos-digitais',
     loadChildren: () => import('./pages/jogos-digitais/jogos-digitais.module').then( m => m.JogosDigitaisPageModule)
+  },
+  {
+    path: 'mais-informacoes',
+    loadChildren: () => import('./pages/mais-informacoes/mais-informacoes.module').then( m => m.MaisInformacoesPageModule)
   }
+
 ];
 @NgModule({
   imports: [
