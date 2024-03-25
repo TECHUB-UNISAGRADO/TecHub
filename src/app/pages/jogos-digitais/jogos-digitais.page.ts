@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class JogosDigitaisPage implements OnInit {
   public voltar: boolean = true;
   public titulo: string = "Jogos Digitais";
+  public email = "jogos@unisagrado.edu.br";
   
   constructor() { }
 
