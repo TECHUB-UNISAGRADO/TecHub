@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular'; 
 
 @Component({
   selector: 'app-tab2',
@@ -9,6 +10,13 @@ export class Tab2Page {
 
   public titulo: string = "LABORATÓRIOS";
 
-  constructor() { }
+  constructor(private navCtrl: NavController) {}
+
+  ngOnInit() {
+  }
+
+  redirectF008() {
+    this.navCtrl.navigateForward('/f008');
+  }
 
 }

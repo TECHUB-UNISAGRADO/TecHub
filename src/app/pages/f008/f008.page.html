@@ -1,0 +1,26 @@
+<app-header [voltar]="voltar" [titulo]="titulo"></app-header>
+
+<ion-content [fullscreen]="true" color="dark">
+    <div class="container-slide">
+        <div class="slider">
+            <div class="slide" *ngFor="let image of images; let i = index" [ngClass]="{'active': i === currentSlide}">
+              <img [src]="image.src" [alt]="image.alt">
+            </div>
+            
+            <button class="prev" (click)="moveSlide(-1)">&#10094;</button>
+            <button class="next" (click)="moveSlide(1)">&#10095;</button>
+          </div>
+    </div>
+
+    <section class="container-text">
+        <p class="text-presentation">
+            As imagens acima apresentam o ambiente e todos os equipamentos tecnológicos dispostos no laboratório F-008, incluindo computadores, componentes de rede e projetores.
+        </p>
+    </section>
+    <section class="container-text">
+        <p class="text-presentation">
+            Com um ambiente organizado, os computadores são alinhados harmoniosamente sobre as mesas, criando fileiras que se estendem ao longo do espaço disponível, criando um espaço propício ao estudo e à produtividade.
+        </p>
+    </section>
+  
+</ion-content>
