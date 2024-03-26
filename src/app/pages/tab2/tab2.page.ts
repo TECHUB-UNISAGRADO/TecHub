@@ -16,7 +16,18 @@ export class Tab2Page {
   }
 
   redirectF008() {
-    this.navCtrl.navigateForward('/f008');
+    let lab = '008';
+    this.navCtrl.navigateForward('/labs/' + lab);
+  }
+
+  redirectF102() {
+    let lab = '102';
+    this.navCtrl.navigateForward('/labs/' + lab);
+  }
+
+  redirectF108() {
+    let lab = '108';
+    this.navCtrl.navigateForward('/labs/' + lab);
   }
 
 }

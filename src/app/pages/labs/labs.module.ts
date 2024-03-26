@@ -4,9 +4,9 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { F008PageRoutingModule } from './f008-routing.module';
+import { LabsPageRoutingModule } from './labs-routing.module';
 
-import { F008Page } from './f008.page';
+import { LabsPage } from './labs.page';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
@@ -14,9 +14,9 @@ import { SharedModule } from 'src/app/shared/shared.module';
     CommonModule,
     FormsModule,
     IonicModule,
-    F008PageRoutingModule,
+    LabsPageRoutingModule,
     SharedModule
   ],
-  declarations: [F008Page]
+  declarations: [LabsPage]
 })
-export class F008PageModule {}
+export class LabsPageModule {}

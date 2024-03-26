@@ -23,8 +23,8 @@ const routes: Routes = [
     loadChildren: () => import('./pages/mais-informacoes/mais-informacoes.module').then( m => m.MaisInformacoesPageModule)
   },
   {
-    path: 'f008',
-    loadChildren: () => import('./pages/f008/f008.module').then( m => m.F008PageModule)
+    path: 'labs/:lab',
+    loadChildren: () => import('./pages/labs/labs.module').then( m => m.LabsPageModule)
   }
 
 ];
