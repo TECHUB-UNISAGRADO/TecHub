@@ -17,6 +17,7 @@ export class LabsPage implements OnInit {
   currentSlide: number = 0;
   images: { src: string, alt: string }[] = [];
   imageDirectory: string = 'assets/imgs/labs/';
+  intervalId: any;
 
   ngOnInit() {
     this.route.params.subscribe(params => {
@@ -34,7 +35,17 @@ export class LabsPage implements OnInit {
         this.loadImagesFromDirectory('F108/');
         this.texto = "As imagens acima apresentam o ambiente e todos os equipamentos tecnológicos dispostos no laboratório F-108, incluindo computadores, componentes de rede e projetores.";
       }
+
+      // Configurar intervalo automático para mudar as imagens
+      this.intervalId = setInterval(() => {
+        this.moveSlide(1);
+      }, 3000); // 5000 milissegundos = 5 segundos
     });
+  }
+
+  ngOnDestroy() {
+    // Limpar o intervalo quando o componente for destruído para evitar vazamentos de memória
+    clearInterval(this.intervalId);
   }
 
   loadImagesFromDirectory(directory: string): void {
