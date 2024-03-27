@@ -35,10 +35,6 @@ export class LabsPage implements OnInit {
         this.texto = "As imagens acima apresentam o ambiente e todos os equipamentos tecnológicos dispostos no laboratório F-108, incluindo computadores, componentes de rede e projetores.";
       }
     });
-
-    setInterval(() => {
-      this.moveSlide(1);
-    }, 10000);
   }
 
   loadImagesFromDirectory(directory: string): void {
