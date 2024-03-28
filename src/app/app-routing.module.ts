@@ -19,13 +19,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/jogos-digitais/jogos-digitais.module').then( m => m.JogosDigitaisPageModule)
   },
   {
-    path: 'mais-informacoes',
-    loadChildren: () => import('./pages/mais-informacoes/mais-informacoes.module').then( m => m.MaisInformacoesPageModule)
-  },
-  {
     path: 'labs/:lab',
     loadChildren: () => import('./pages/labs/labs.module').then( m => m.LabsPageModule)
+  },
+  {
+    path: 'curso',
+    loadChildren: () => import('./pages/curso/curso.module').then( m => m.CursoPageModule)
   }
+
 
 ];
 @NgModule({
