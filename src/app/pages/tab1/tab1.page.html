@@ -1,33 +1,22 @@
 <app-header [titulo]="titulo"></app-header>
 
 <ion-content [fullscreen]="true" color="dark">
+  <!--
   <div class="app-name" style="display: flex; justify-content: center; margin-top: 10px;">
     <img src="assets/imgs/logo/nome-app.png" style="width: 50%;">
   </div>
+  -->
 
-  <div class="cards-home">
-    <ion-button class="btn-card" button="true" (click)="redirectCC()">
-      <ion-card class="card-media-home">
-        <div class="img-container">
-          <img class="card-img" alt="Silhouette of mountains" src="assets/imgs/cursos/ciencia-da-computacao.jpg" />
+  <section class="cards-home" *ngFor="let curso of cursos">
+    <ion-button [routerLink]="'/curso/' + curso.id">
+      <ion-card color="degrade-invertido">
+        <div>
+          <img [alt]="'Imagem do curso de' + curso.nome" [src]="curso.imagem" />
         </div>
-        <ion-card-header class="header-card">
-          Ciência da Computação
+        <ion-card-header>
+          {{curso.nome}}
         </ion-card-header>
       </ion-card>
     </ion-button>
-  </div>
-
-  <div class="cards-home">
-    <ion-button class="btn-card" button="true" (click)="redirectJD()">
-      <ion-card class="card-media-home">
-        <div class="img-container">
-          <img class="card-img" alt="Silhouette of mountains" src="assets/imgs/cursos/jogos-digitais.jpg" />
-        </div>
-        <ion-card-header class="header-card">
-          Jogos Digitais
-        </ion-card-header>
-      </ion-card>
-    </ion-button>
-  </div>
+  </section>
 </ion-content>

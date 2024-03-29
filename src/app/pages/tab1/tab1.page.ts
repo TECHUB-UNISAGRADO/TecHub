@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-import { NavController } from '@ionic/angular'; 
+import { Component } from '@angular/core';
+import { ICurso } from 'src/app/models/ICurso.model';
 
 @Component({
   selector: 'app-tab1',
@@ -10,14 +10,18 @@ export class Tab1Page {
 
   public titulo: string = "CURSOS";
 
-  constructor(private navCtrl: NavController) {}
-  
-  redirectCC() {
-    this.navCtrl.navigateForward('/ciencia-computacao');
-  }
+  public cursos: ICurso[] = [
+    {
+      id: "ciencia-da-computacao",
+      nome: "Ciência da Computação",
+      imagem: "assets/imgs/cursos/ciencia-da-computacao.jpg"
+    },
+    {
+      id: "jogos-digitais",
+      nome: "Jogos Digitais",
+      imagem: "assets/imgs/cursos/jogos-digitais.jpg"
+    }
+  ];
 
-  redirectJD() {
-    this.navCtrl.navigateForward('/jogos-digitais');
-  }
-
+  constructor() { }
 }

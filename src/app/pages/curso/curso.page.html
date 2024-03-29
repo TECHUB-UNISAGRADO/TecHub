@@ -1,0 +1,88 @@
+<app-header [voltar]="voltar" [titulo]="titulo"></app-header>
+
+<ion-content [fullscreen]="true" color="dark">
+  <section class="content-section">
+    <ion-card color="degrade">
+      <ion-card-header>
+        <ion-card-title>INFORMAÇÕES</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="text-align: center;">
+        <p>
+          <strong>Titulação</strong><br> {{curso.titulacao}}
+        </p>
+        <p>
+          <strong>Modalidade</strong><br> {{curso.modalidade}}
+        </p>
+        <p>
+          <strong>Duração</strong><br> {{curso.duracao}}
+        </p>
+        <p>
+          <strong>Período</strong><br> {{curso.periodo}}
+        </p>
+        <p>
+          <strong>Área</strong><br> {{curso.area}}
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <section class="content-section">
+    <ion-card color="degrade">
+      <ion-card-header>
+        <ion-card-title>O CURSO</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p *ngFor="let descs of curso.oCurso"><span> </span>
+          {{descs}}
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <section class="content-section">
+    <ion-card color="degrade">
+      <ion-card-header>
+        <ion-card-title>VOCÊ COMO PROFISSIONAL</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p *ngFor="let descs of curso.voceComoProfissional"><span> </span>
+          {{descs}}
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <section class="content-section">
+    <ion-card color="degrade">
+      <ion-card-header>
+        <ion-card-title>SEU FUTURO</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <p *ngFor="let descs of curso.seuFuturo"><span> </span>
+          {{descs}}
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <section class="content-section">
+    <ion-card color="degrade">
+      <ion-card-header>
+        <ion-card-title>COORDENAÇÃO</ion-card-title>
+      </ion-card-header>
+      <ion-card-content style="text-align: center;">
+        <p>
+          <strong>Telefone:</strong> {{curso.telefone}}
+        </p>
+        <p>
+          <strong>E-mail:</strong> {{curso.email}}
+        </p>
+      </ion-card-content>
+    </ion-card>
+  </section>
+
+  <section class="content-section">
+    <ion-button fill="outline" id="open-modal">MAIS INFORMAÇÕES</ion-button>
+    <app-mais-informacoes [id]="curso.id"></app-mais-informacoes>
+  </section>
+</ion-content>

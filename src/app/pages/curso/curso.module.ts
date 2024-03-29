@@ -4,19 +4,20 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { CienciaComputacaoPageRoutingModule } from './ciencia-computacao-routing.module';
+import { CursoPageRoutingModule } from './curso-routing.module';
 
-import { CienciaComputacaoPage } from './ciencia-computacao.page';
+import { CursoPage } from './curso.page';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { MaisInformacoesComponent } from './mais-informacoes/mais-informacoes.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    CienciaComputacaoPageRoutingModule,
-    SharedModule
+    CursoPageRoutingModule,
+    SharedModule,
   ],
-  declarations: [CienciaComputacaoPage]
+  declarations: [CursoPage, MaisInformacoesComponent]
 })
-export class CienciaComputacaoPageModule {}
+export class CursoPageModule {}
