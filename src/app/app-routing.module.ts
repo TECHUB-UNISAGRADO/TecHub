@@ -11,23 +11,13 @@ const routes: Routes = [
     loadChildren: () => import('./pages/splash/splash.module').then(m => m.SplashPageModule)
   },
   {
-    path: 'ciencia-computacao',
-    loadChildren: () => import('./pages/ciencia-computacao/ciencia-computacao.module').then( m => m.CienciaComputacaoPageModule)
-  },
-  {
-    path: 'jogos-digitais',
-    loadChildren: () => import('./pages/jogos-digitais/jogos-digitais.module').then( m => m.JogosDigitaisPageModule)
-  },
-  {
     path: 'labs/:lab',
-    loadChildren: () => import('./pages/labs/labs.module').then( m => m.LabsPageModule)
+    loadChildren: () => import('./pages/labs/labs.module').then(m => m.LabsPageModule)
   },
   {
-    path: 'curso',
-    loadChildren: () => import('./pages/curso/curso.module').then( m => m.CursoPageModule)
+    path: 'curso/:id',
+    loadChildren: () => import('./pages/curso/curso.module').then(m => m.CursoPageModule)
   }
-
-
 ];
 @NgModule({
   imports: [

@@ -8,19 +8,19 @@
       </ion-card-header>
       <ion-card-content style="text-align: center;">
         <p>
-          <strong>Titulação</strong><br> Bacharel
+          <strong>Titulação</strong><br> {{curso.titulacao}}
         </p>
         <p>
-          <strong>Modalidade</strong><br> Presencial
+          <strong>Modalidade</strong><br> {{curso.modalidade}}
         </p>
         <p>
-          <strong>Duração</strong><br> 4 anos
+          <strong>Duração</strong><br> {{curso.duracao}}
         </p>
         <p>
-          <strong>Período</strong><br> Noturno
+          <strong>Período</strong><br> {{curso.periodo}}
         </p>
         <p>
-          <strong>Área</strong><br> Exatas
+          <strong>Área</strong><br> {{curso.area}}
         </p>
       </ion-card-content>
     </ion-card>
@@ -32,17 +32,8 @@
         <ion-card-title>O CURSO</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p><span> </span>
-          Desafios, tecnologias e mundo digital: o universo da computação é para pessoas antenadas nesses assuntos.
-        </p>
-        <p><span> </span>
-          O bacharelado em Ciência da Computação forma profissionais capazes não só de propor soluções de problemas,
-          mas também de inovar e promover a evolução tecnológica da computação e da informática.
-        </p>
-        <p><span> </span>
-          A formação do estudante vai além da teoria, são utilizados métodos práticos em laboratórios altamente
-          equipados para complementar os fundamentos apresentados em disciplinas, tais como Linguagens de programação,
-          Realidade Virtual e Inteligência Artificial.
+        <p *ngFor="let descs of curso.oCurso"><span> </span>
+          {{descs}}
         </p>
       </ion-card-content>
     </ion-card>
@@ -54,18 +45,8 @@
         <ion-card-title>VOCÊ COMO PROFISSIONAL</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p><span> </span>
-          A área de atuação de um profissional de Ciência da Computação abrange a Tecnologia da
-          Informação, que é um mercado em crescimento na atualidade.
-        </p>
-        <p><span> </span>
-          O cientista da computação poderá atuar em projetos computacionais de hardware e software: projeto de
-          infraestrutura de tecnologia, gerenciamento e bancos de dados, análise de sistemas, segurança da informação,
-          organização de projetos, comunicação e transmissão de dados, indústria de entretenimento através da utilização
-          de computação gráfica, multimídia e realidade virtual.
-        </p>
-        <p><span> </span>
-          E não para por aí! A carreira acadêmica é uma ótima opção para quem se interessa por pesquisa e pela docência.
+        <p *ngFor="let descs of curso.voceComoProfissional"><span> </span>
+          {{descs}}
         </p>
       </ion-card-content>
     </ion-card>
@@ -77,13 +58,8 @@
         <ion-card-title>SEU FUTURO</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p><span> </span>
-          De olho no futuro e acompanhando as tendências na indústria da informação, pode-se dizer que o mercado de
-          atuação está cada vez mais amplo e exigente, sendo a formação profissional cada vez mais essencial.
-        </p>
-        <p><span> </span>
-          Grande parte das empresas públicas e privadas utiliza algum tipo de tecnologia para desenvolver suas
-          atividades, necessitando de criação, programação, análise, suporte e inovação.
+        <p *ngFor="let descs of curso.seuFuturo"><span> </span>
+          {{descs}}
         </p>
       </ion-card-content>
     </ion-card>
@@ -96,10 +72,10 @@
       </ion-card-header>
       <ion-card-content style="text-align: center;">
         <p>
-          <strong>Telefone:</strong> (14) 2107-7091
+          <strong>Telefone:</strong> {{curso.telefone}}
         </p>
         <p>
-          <strong>E-mail:</strong> {{email}}
+          <strong>E-mail:</strong> {{curso.email}}
         </p>
       </ion-card-content>
     </ion-card>
@@ -107,6 +83,6 @@
 
   <section class="content-section">
     <ion-button fill="outline" id="open-modal">MAIS INFORMAÇÕES</ion-button>
-    <app-mais-informacoes></app-mais-informacoes>
+    <app-mais-informacoes [id]="curso.id"></app-mais-informacoes>
   </section>
 </ion-content>

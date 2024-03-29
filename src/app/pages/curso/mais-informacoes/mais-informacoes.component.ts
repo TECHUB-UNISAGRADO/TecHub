@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { CheckboxCustomEvent } from '@ionic/angular';
+import { Component, Input, OnInit } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 
 @Component({
@@ -7,15 +6,16 @@ import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
   templateUrl: './mais-informacoes.component.html',
   styleUrls: ['./mais-informacoes.component.scss'],
 })
-export class MaisInformacoesComponent {
+export class MaisInformacoesComponent implements OnInit {
 
-  public titulo: string = "Mais Informações";
-  public url: SafeResourceUrl;
+  @Input() public id!: string;
 
-  canDismiss = false;
+  public url!: SafeResourceUrl;
 
-  constructor(private domSanitizer: DomSanitizer) {
-    const link = "https://unisagrado.edu.br/graduacao/ciencia-da-computacao";
+  constructor(private domSanitizer: DomSanitizer) { }
+
+  ngOnInit() {
+    const link = "https://unisagrado.edu.br/graduacao/" + this.id;
     this.url = this.domSanitizer.bypassSecurityTrustResourceUrl(link);
   }
 }
