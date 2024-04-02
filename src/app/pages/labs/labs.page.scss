@@ -43,15 +43,16 @@
     }
   
     .container-text{
-      display: flex;
-      justify-content: center;
+      margin: 0px 20px 0px 20px;
   
       .text-presentation{
-        width: 90%;
         margin-top: 25px;
         text-align: justify;
         color: white;
-        text-indent: 30px;
+
+        span{
+          margin-left: 20px;
+        }
       }
     }
     
