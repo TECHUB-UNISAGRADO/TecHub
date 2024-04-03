@@ -6,7 +6,7 @@
       <ion-card-header>
         <ion-card-title>INFORMAÇÕES</ion-card-title>
       </ion-card-header>
-      <ion-card-content style="text-align: center;">
+      <ion-card-content style="text-align: center;"  #page>
         <p>
           <strong>Titulação</strong><br> {{curso.titulacao}}
         </p>
@@ -48,8 +48,32 @@
         <p *ngFor="let descs of curso.voceComoProfissional"><span> </span>
           {{descs}}
         </p>
+        <br />
+        <ion-button id="open-modal-depoimento" fill="outline">Depoimento</ion-button>
       </ion-card-content>
     </ion-card>
+
+
+    <ion-modal #modal trigger="open-modal-depoimento" [presentingElement]="page" color="dark">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar color="degrade">
+            <ion-title>Depoimento</ion-title>
+            <ion-buttons slot="end">
+              <ion-button class="close-modal" (click)="modal.dismiss()">Fechar</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding" color="dark">
+          <p>
+            To close this modal, please use the "Close" button provided. Note that swiping the modal will not dismiss
+            it.
+          </p>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+
+
   </section>
 
   <section class="content-section">
