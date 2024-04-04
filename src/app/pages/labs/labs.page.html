@@ -13,9 +13,9 @@
     </div>
 
     <section class="container-text">
-        <p class="text-presentation">
-          <!--Texto de acordo com cada lab (verificação feita no labs.page.ts)-->
-            {{texto}}
+        <p class="text-presentation" *ngFor="let descricao of texto">
+          <span> </span>
+          {{descricao}}
         </p>
     </section>
 </ion-content>
