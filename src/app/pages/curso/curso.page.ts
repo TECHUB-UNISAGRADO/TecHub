@@ -11,6 +11,7 @@ export class CursoPage implements OnInit {
 
   public voltar: boolean = true;
   public titulo: string = "";
+  public depoimento: any = "";
 
   public curso: ICurso = {
     id: "",
@@ -56,6 +57,8 @@ export class CursoPage implements OnInit {
         ];
         this.curso.telefone = "(14) 2107-7091";
         this.curso.email = "computacao@unisagrado.edu.br";
+
+        this.depoimento = "A seguir, um depoimento de um professor do curso de Ciência da Computação sobre o mercado de trabalho";
         break;
       case "jogos-digitais":
         this.curso.nome = "Jogos Digitais";
@@ -75,6 +78,8 @@ export class CursoPage implements OnInit {
         ];
         this.curso.telefone = "(14) 2107-7091";
         this.curso.email = "jogos@unisagrado.edu.br";
+
+        this.depoimento = "A seguir, um depoimento de um professor do curso de Jogos Digitais sobre o mercado de trabalho";
         break;
     }
     this.curso.modalidade = "Presencial";
