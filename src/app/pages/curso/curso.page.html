@@ -53,7 +53,7 @@
       </ion-card-content>
     </ion-card>
 
-
+    <!--Modal Depoimentos exibido ao clicar no botao-->
     <ion-modal #modal trigger="open-modal-depoimento" [presentingElement]="page" color="dark">
       <ng-template>
         <ion-header>
@@ -66,8 +66,7 @@
         </ion-header>
         <ion-content class="ion-padding" color="dark">
           <p>
-            To close this modal, please use the "Close" button provided. Note that swiping the modal will not dismiss
-            it.
+            {{depoimento}}
           </p>
         </ion-content>
       </ng-template>

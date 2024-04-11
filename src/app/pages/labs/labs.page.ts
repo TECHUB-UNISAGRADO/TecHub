@@ -9,14 +9,14 @@ import { ActivatedRoute } from '@angular/router';
 export class LabsPage implements OnInit {
   public parametroRecebido: string = '';
   public voltar: boolean = true;
-  public titulo: string = ''; // Inicialize como vazio
+  public titulo: string = ''; 
   public texto: any = [];
 
   constructor(private route: ActivatedRoute) {}
 
   currentSlide: number = 0;
   images: { src: string, alt: string }[] = [];
-  imageDirectory: string = 'assets/imgs/labs/';
+  imageDirectory: string = 'assets/imgs/labs/'; //caminho padrão para as imagens dos labs
   intervalId: any;
 
   ngOnInit() {
@@ -54,15 +54,14 @@ export class LabsPage implements OnInit {
   }
 
   ngOnDestroy() {
-    // Limpar o intervalo quando o componente for destruído para evitar vazamentos de memória
+    // Limpar o intervalo ao sair da page
     clearInterval(this.intervalId);
   }
 
   loadImagesFromDirectory(directory: string): void {
-    // Supondo que você tenha uma lista de nomes de arquivos predefinida
+    // nomes padronizados por pasta para cada lab
     const imageNames: string[] = ['imagem1.JPG', 'imagem2.JPG', 'imagem3.JPG', 'imagem4.JPG'];
 
-    // Construa a lista de imagens com base nos nomes de arquivo e diretório
     this.images = imageNames.map(name => ({
       src: this.imageDirectory + directory + name,
       alt: name,

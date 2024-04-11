@@ -21,10 +21,9 @@
       p {
         margin: 10px 0px 0px 0px;
         tab-size: 8;
-
-        // fiz isso com o span pois, dependendo do tamanho da tela, o espaço da tabulação (&nbsp;) ficava diferente em cada parágrafo
+        
         span {
-          margin-left: 20px;
+          margin-left: 30px;
         }
       }
     }
