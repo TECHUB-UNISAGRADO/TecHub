@@ -1,22 +1,23 @@
 <app-header [titulo]="titulo"></app-header>
 
-<ion-content [fullscreen]="true" color="dark">
+<ion-content [fullscreen]="true" color="dark" >
   <!--
   <div class="app-name" style="display: flex; justify-content: center; margin-top: 10px;">
     <img src="assets/imgs/logo/nome-app.png" style="width: 50%;">
   </div>
   -->
-
-  <section class="cards-home" *ngFor="let curso of cursos">
-    <ion-button [routerLink]="'/curso/' + curso.id">
-      <ion-card color="degrade-invertido">
-        <div>
-          <img [alt]="'Imagem do curso de' + curso.nome" [src]="curso.imagem" />
-        </div>
-        <ion-card-header>
-          {{curso.nome}}
-        </ion-card-header>
-      </ion-card>
-    </ion-button>
+  <section class="align-center">
+    <div class="cards-home" *ngFor="let curso of cursos">
+      <ion-button [routerLink]="'/curso/' + curso.id">
+        <ion-card color="degrade-invertido">
+          <div>
+            <img [alt]="'Imagem do curso de' + curso.nome" [src]="curso.imagem" />
+          </div>
+          <ion-card-header>
+            {{curso.nome}}
+          </ion-card-header>
+        </ion-card>
+      </ion-button>
+    </div>
   </section>
 </ion-content>

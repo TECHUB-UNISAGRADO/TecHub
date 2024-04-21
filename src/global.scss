@@ -46,3 +46,10 @@ ion-header {
     text-align: center;
   }
 }
+
+.align-center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

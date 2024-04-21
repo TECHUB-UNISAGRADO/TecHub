@@ -1,25 +1,70 @@
 <app-header [titulo]="titulo"> </app-header>
 
 <ion-content [fullscreen]="true" color="dark">
-    <section class="content-section">
-        <ion-card color="degrade">
-          <ion-card-header>
-            <ion-card-title>DESENVOLVEDORES</ion-card-title>
-          </ion-card-header>
-          <ion-card-content>
-            <p><span> </span>
-                Échelly Paiva
-            </p>
-            <p><span> </span>
-                Gabriel José Soto Ravanhan
-            </p>
-            <p><span> </span>
-                Larissa Alves de Souza
-            </p>
-            <p><span> </span>
-                Samuel Fernandes Monteiro
-            </p>
-          </ion-card-content>
-        </ion-card>
-      </section>
+  <div>
+    <section class="logos">
+      <ion-list lines="none">
+        <ion-list-header color="dark">
+          <ion-label>DESENVOLVIMENTO</ion-label>
+        </ion-list-header>
+        <ion-item color="dark">
+          <div class="img">
+            <img src="assets/imgs/creditos/bcc.jpg" alt="Logo de BCC">
+          </div>
+        </ion-item>
+      </ion-list>
+
+      <ion-list lines="none">
+        <ion-list-header color="dark">
+          <ion-label>APOIO</ion-label>
+        </ion-list-header>
+        <ion-item color="dark">
+          <div class="img">
+            <img src="assets/imgs/creditos/pro-reitoria.jpg" alt="Logo de Pró-retoria">
+          </div>
+        </ion-item>
+      </ion-list>
+    </section>
+
+    <hr>
+
+    <section class="devs">
+      <ion-list lines="none">
+        <ion-list-header color="dark">
+          <ion-label>DESENVOLVEDORES</ion-label>
+        </ion-list-header>
+        <ion-item color="dark" *ngFor="let dev of devs">
+          <ion-label>
+            {{dev}}
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </section>
+
+    <hr>
+
+    <section class="disciplina">
+      <ion-list lines="none">
+        <ion-list-header color="dark">
+          <ion-label>DISCIPLINA</ion-label>
+        </ion-list-header>
+        <ion-item color="dark">
+          <ion-label>
+            {{disciplina}}
+          </ion-label>
+        </ion-item>
+      </ion-list>
+
+      <ion-list lines="none">
+        <ion-list-header color="dark">
+          <ion-label>PROFESSOR</ion-label>
+        </ion-list-header>
+        <ion-item color="dark">
+          <ion-label>
+            {{professor}}
+          </ion-label>
+        </ion-item>
+      </ion-list>
+    </section>
+  </div>
 </ion-content>
