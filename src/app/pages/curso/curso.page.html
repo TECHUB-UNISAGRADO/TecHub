@@ -6,24 +6,41 @@
       <ion-card-header>
         <ion-card-title>INFORMAÇÕES</ion-card-title>
       </ion-card-header>
-      <ion-card-content style="text-align: center;"  #page>
-        <p>
-          <strong>Titulação</strong><br> {{curso.titulacao}}
-        </p>
-        <p>
-          <strong>Modalidade</strong><br> {{curso.modalidade}}
-        </p>
-        <p>
-          <strong>Duração</strong><br> {{curso.duracao}}
-        </p>
-        <p>
-          <strong>Período</strong><br> {{curso.periodo}}
-        </p>
-        <p>
-          <strong>Área</strong><br> {{curso.area}}
-        </p>
+      <ion-card-content style="margin-top: 10px;"  #page>
+        <ion-list lines="none">
+          <ion-item>
+            <ion-label>
+              <ion-icon aria-hidden="true" name="moon-outline" slot="start" size="large" color="light"></ion-icon>
+              Período: {{curso.periodo}}
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <ion-icon aria-hidden="true" name="school-outline" size="large" color="light"></ion-icon>
+              Titulação: {{curso.titulacao}}
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <ion-icon aria-hidden="true" name="business-outline" slot="start" size="large" color="light"></ion-icon>
+              Modalidade: {{curso.modalidade}}
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <ion-icon aria-hidden="true" name="time-outline" slot="start" size="large" color="light"></ion-icon>
+              Duração: {{curso.duracao}}
+            </ion-label>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              <ion-icon aria-hidden="true" name="options-outline" slot="start" size="large" color="light"></ion-icon>
+              Área: {{curso.area}}
+            </ion-label>
+          </ion-item>
+        </ion-list>
       </ion-card-content>
-    </ion-card>
+    </ion-card>  
   </section>
 
   <section class="content-section">
@@ -48,8 +65,9 @@
         <p *ngFor="let descs of curso.voceComoProfissional"><span> </span>
           {{descs}}
         </p>
-        <br />
-        <ion-button id="open-modal-depoimento" fill="outline">Depoimento</ion-button>
+        <div class="btn-depoimentos">
+          <ion-button id="open-modal-depoimento" fill="outline">DEPOIMENTOS</ion-button>
+        </div>
       </ion-card-content>
     </ion-card>
 
@@ -71,8 +89,6 @@
         </ion-content>
       </ng-template>
     </ion-modal>
-
-
   </section>
 
   <section class="content-section">
