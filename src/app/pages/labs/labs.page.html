@@ -4,9 +4,9 @@
     <div class="container-slide">
         <div class="slider">
             <div class="slide" *ngFor="let image of images; let i = index" [ngClass]="{'active': i === currentSlide}">
-              <img [src]="image.src" [alt]="image.alt">
+              <img [src]="image.src" [alt]="image.alt" style="border-radius: 5px;">
             </div>
-            
+
             <button class="prev" (click)="moveSlide(-1)">&#10094;</button>
             <button class="next" (click)="moveSlide(1)">&#10095;</button>
           </div>

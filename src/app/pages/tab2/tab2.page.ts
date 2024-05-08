@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from '@ionic/angular'; 
+import { ILaboratorio } from 'src/app/models/ILaboratorio.model';
 
 @Component({
   selector: 'app-tab2',
@@ -10,24 +10,20 @@ export class Tab2Page {
 
   public titulo: string = "LABORATÓRIOS";
 
-  constructor(private navCtrl: NavController) {}
+  public laboratorios: ILaboratorio[] = [
+    {
+      id: "008",
+      nome: "F-008"
+    },
+    {
+      id: "102",
+      nome: "F-102"
+    },
+    {
+      id: "108",
+      nome: "F-108"
+    }
+  ]
 
-  ngOnInit() {
-  }
-
-  redirectF008() {
-    let lab = '008';
-    this.navCtrl.navigateForward('/labs/' + lab);
-  }
-
-  redirectF102() {
-    let lab = '102';
-    this.navCtrl.navigateForward('/labs/' + lab);
-  }
-
-  redirectF108() {
-    let lab = '108';
-    this.navCtrl.navigateForward('/labs/' + lab);
-  }
-
+  constructor() { }
 }
