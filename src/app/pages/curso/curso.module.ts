@@ -1,3 +1,4 @@
+import { DepoimentosComponent } from './depoimentos/depoimentos.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -18,6 +19,6 @@ import { MaisInformacoesComponent } from './mais-informacoes/mais-informacoes.co
     CursoPageRoutingModule,
     SharedModule,
   ],
-  declarations: [CursoPage, MaisInformacoesComponent]
+  declarations: [CursoPage, DepoimentosComponent, MaisInformacoesComponent]
 })
-export class CursoPageModule {}
+export class CursoPageModule { }

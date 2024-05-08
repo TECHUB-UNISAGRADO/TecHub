@@ -21,16 +21,16 @@
       ion-list {
         padding: 0;
         background: #66000000;
-      
+
         ion-item {
           --background: #66000000;
           --color: #fff;
-      
+
           ion-label {
             display: flex;
             align-items: center;
             justify-content: center;
-      
+
             ion-icon {
               margin-right: 10px;
             }
@@ -40,7 +40,7 @@
 
       p {
         margin: 10px 0px 0px 0px;
-        
+
         span {
           margin-left: 30px;
         }
@@ -52,10 +52,6 @@
     --color: #fff;
     --border-color: #fff;
   }
-}
-
-.close-modal{
-  color: white;
 }
 
 .btn-depoimentos {
