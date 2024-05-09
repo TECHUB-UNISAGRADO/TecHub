@@ -11,12 +11,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/splash/splash.module').then(m => m.SplashPageModule)
   },
   {
-    path: 'labs/:lab',
-    loadChildren: () => import('./pages/labs/labs.module').then(m => m.LabsPageModule)
-  },
-  {
     path: 'curso/:id',
     loadChildren: () => import('./pages/curso/curso.module').then(m => m.CursoPageModule)
+  },
+  {
+    path: 'laboratorio/:id',
+    loadChildren: () => import('./pages/labs/labs.module').then(m => m.LabsPageModule)
   }
 ];
 @NgModule({

@@ -4,24 +4,24 @@
     justify-content: center;
     background-color: transparent !important;
   }
-    
+
     .slider {
       position: relative;
       max-width: 90%;
     }
-    
+
     .slide {
       display: none;
     }
-    
+
     .slide.active {
       display: block;
     }
-    
+
     .slide img {
       width: 100%;
     }
-    
+
     button {
       position: absolute;
       top: 50%;
@@ -33,18 +33,18 @@
       padding: 10px;
       z-index: 100;
     }
-    
+
     .prev {
       left: 0;
     }
-    
+
     .next {
       right: 0;
     }
-  
+
     .container-text{
       margin: 0px 20px 0px 20px;
-  
+
       .text-presentation{
         margin-top: 25px;
         text-align: justify;
@@ -55,4 +55,3 @@
         }
       }
     }
-    

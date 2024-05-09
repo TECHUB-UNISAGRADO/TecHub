@@ -1,8 +1,8 @@
-<ion-modal #modal trigger="open-modal-mais-informacoes">
+<ion-modal #modal trigger="open-modal-depoimento" color="dark">
   <ng-template>
     <ion-header>
       <ion-toolbar color="degrade">
-        <ion-title>Mais Informações</ion-title>
+        <ion-title>Depoimentos</ion-title>
         <ion-buttons slot="end">
           <ion-button (click)="modal.dismiss()">
             <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
@@ -10,9 +10,10 @@
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
-    <ion-content>
-      <iframe [src]="url">
-      </iframe>
+    <ion-content class="ion-padding" color="dark">
+      <p>
+        {{depoimentos}}
+      </p>
     </ion-content>
   </ng-template>
 </ion-modal>
