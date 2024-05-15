@@ -1,4 +1,4 @@
-import { DepoimentosComponent } from './depoimentos/depoimentos.component';
+import { DepoimentoComponent } from './depoimento/depoimento.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
@@ -19,6 +19,6 @@ import { MaisInformacoesComponent } from './mais-informacoes/mais-informacoes.co
     CursoPageRoutingModule,
     SharedModule,
   ],
-  declarations: [CursoPage, DepoimentosComponent, MaisInformacoesComponent]
+  declarations: [CursoPage, DepoimentoComponent, MaisInformacoesComponent]
 })
 export class CursoPageModule { }

@@ -1,3 +1,5 @@
+import { IDepoimento } from "./IDepoimento.model";
+
 export interface ICurso {
   id: string;
   nome: string;
@@ -12,4 +14,5 @@ export interface ICurso {
   telefone?: string;
   email?: string;
   imagem?: string;
+  depoimento?: IDepoimento;
 }
