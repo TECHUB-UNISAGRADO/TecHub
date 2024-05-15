@@ -65,9 +65,9 @@
         <p *ngFor="let descs of curso.voceComoProfissional"><span> </span>
           {{descs}}
         </p>
-        <div class="btn-depoimentos">
-          <ion-button id="open-modal-depoimento" fill="outline">DEPOIMENTOS</ion-button>
-          <app-depoimentos></app-depoimentos>
+        <div class="btn-depoimento">
+          <ion-button id="open-modal-depoimento" fill="outline">DEPOIMENTO</ion-button>
+          <app-depoimento [id]="curso.id"></app-depoimento>
         </div>
       </ion-card-content>
     </ion-card>
