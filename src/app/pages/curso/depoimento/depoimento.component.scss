@@ -3,20 +3,23 @@ ion-modal {
   --height: 100%;
   --display: flex;
   --justify-content: center;
-  --align-items: center; /* Adicione esta linha */
+  --align-items: center;
 }
 
-.container-depoimento{
+.container-depoimento {
   width: 80%;
-  margin: auto; /* Adicione esta linha */
+  margin: auto;
 
-  .titulo-depoimento{
+  .titulo-depoimento {
     text-align: center;
     font-weight: bold;
   }
 
-  .texto-depoimento{
+  .texto-depoimento {
     text-align: justify;
-    word-spacing: 0.5px;
+
+    span {
+      margin-left: 30px;
+    }
   }
 }

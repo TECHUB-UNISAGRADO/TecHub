@@ -2,7 +2,7 @@
   <ng-template>
     <ion-header>
       <ion-toolbar color="degrade">
-        <ion-title>Depoimentos</ion-title>
+        <ion-title>Depoimento</ion-title>
         <ion-buttons slot="end">
           <ion-button (click)="modal.dismiss()">
             <ion-icon slot="icon-only" name="arrow-back-outline"></ion-icon>
@@ -16,10 +16,10 @@
           {{depoimento.autor}}
         </p>
         <br>
-        <p class="texto-depoimento">
-          {{depoimento.depoimento}}
+        <p class="texto-depoimento" *ngFor="let paragrafo of depoimento.depoimento">
+          <span> </span>{{paragrafo}}
         </p>
-    </div>
+      </div>
     </ion-content>
   </ng-template>
 </ion-modal>
