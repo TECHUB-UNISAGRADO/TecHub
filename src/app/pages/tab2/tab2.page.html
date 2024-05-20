@@ -2,14 +2,21 @@
 
 <ion-content [fullscreen]="true" color="dark">
   <section class="align-center">
-    <div class="cards-labs" *ngFor="let laboratorio of laboratorios">
-      <ion-button class="btn-card" button="true" [routerLink]="'/laboratorio/' + laboratorio.id">
-        <ion-card class="card-media-labs">
-          <ion-card-header class="header-card">
-            {{laboratorio.nome}}
-          </ion-card-header>
-        </ion-card>
+    <div class="container-btns" *ngFor="let laboratorio of laboratorios">
+      <ion-button class="btn-card" button="true" expand="full" [routerLink]="'/laboratorio/' + laboratorio.id">
+        <div class="txt-btn">
+          {{laboratorio.nome}}
+        </div>
+        <div class="align-end" style="font-size: xx-large;">
+          <ion-icon name="arrow-forward" slot="end"></ion-icon>
+        </div>
       </ion-button>
     </div>
   </section>
 </ion-content>
+
+
+
+
+
+
