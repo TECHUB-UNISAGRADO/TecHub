@@ -1,41 +1,42 @@
-ion-content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+ion-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-ion-button{
-    --background: transparent !important;
-    --box-shadow: 0 !important;
+ion-button {
+  --background: transparent !important;
+  --box-shadow: 0 !important;
 }
 
-.container-btns{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container-btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.btn-card{
-    --background: transparent !important;
-    width: 100%;
-    margin-top: 15px;
-    color: white;
-    font-size: x-large;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: linear-gradient(to bottom, #500a0a, #8b0303);
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 100px;
-    margin-bottom: 50px;
-    border-radius: 10px;
+.btn-card {
+  --background: transparent !important;
+  width: 100%;
+  margin-top: 15px;
+  color: white;
+  font-size: x-large;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(to bottom, #500a0a, #8b0303);
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 100px;
+  margin-bottom: 50px;
+  border-radius: 10px;
 }
 
-.align-end{
-    margin-left: 75%;
+.align-end {
+  margin-left: 75%;
 }
 
-.txt-btn{
-    margin-left: 25px;
+.txt-btn {
+  margin-left: 25px;
+  font-weight: bold;
 }
